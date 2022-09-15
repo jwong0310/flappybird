@@ -1,0 +1,71 @@
+
+---- MEETING MINUTES 9 WEEK 10 ----
+Present: Niranjana, Richard, Jacky 
+Date: 03/08/2022 
+
+---- CURRENT PROGRESS ----
+NIRA: 
+- auth/passwordreset/request/v1 (COMPLETED IMPLEMENTATION)
+- auth/passwordreset/reset/v1 (COMPLETED IMPLEMENTATION)
+- user/stats/v1 (COMPLETED IMPLEMENTATION)
+- users/stats/v1 (COMPLETED IMPLEMENTATION)
+
+SARAH: 
+- notifications/get/v1 (IMPLEMENTATION 50% COMPLETE)
+- search/v1 (IMPLEMENTATION 50% COMPLETE)
+
+RICHARD: 
+- moving onto iteration3
+
+JACKY: 
+- message/react/v1 (COMPLETED IMPLEMENTATION)
+- message/unreact/v1 (COMPLETED IMPLEMENTATION)
+- message/pin/v1 (COMPLETED IMPLEMENTATION)
+- message/unpin/v1 (COMPLETED IMPLEMENTATION)
+
+NOTES: 
+- all functions that have a query or body parameter should be passed as headers 
+i.e. req.body.<param> --> req.header.('parameter')
+- all functions that require a token should return 403 if token is invalid
+- need to complete PLANNING.pdf --> Elicitation, analysis & specification, 
+validation, interface design, conceptual modellling/state diagrams - Jacky & Nira
+
+
+---- ADDITIONAL WORKS ----
+
+data persistence - Richard (COMPLETED)
+-> introduced a new function loadData and will return the dataStore from a saved file
+-> modified the saveData 
+-> setData will save the dataStore in the savefile
+-> getData will get the date in the dataStore in the savefile
+
+secure sessions & passwords - Jacky 
+
+---- ITERATION 3 WORK ALLOCATIONS -----
+
+---- SARAH ----
+notifications/get/v1
+search/v1 
+
+---- NIRA ----
+user/profile/uploadphoto/v1 
+
+----  JACKY ------
+message/share/v1 
+
+
+----  RICHARD ------
+standup/start/v1
+standup/active/v1
+standup/send/v1
+
+---- TO BE DETERMINED ----
+admin/user/remove/v1 
+admin/userpermission/change/v1 
+message/sendlater/v1
+message/sendlaterdm/v1
+
+
+
+
+

@@ -1,0 +1,68 @@
+
+---- MEETING MINUTES 8 WEEK 9 ----
+Present: Niranjana, Richard, Jacky 
+Date: 27/07/2022 
+
+---- CURRENT PROGRESS ----
+NIRA: 
+- completed messagesRemove implementation, tests for this function to be completed
+- ready to move onto iteration3 once tests are completed
+
+RICHARD: 
+- debugging test cases for channelLeave
+- channelDetails error debugging encountered when calling channelMessages
+- implementation completed for channelJoin, tests for channelJoin to be debugged 
+
+JACKY: 
+- completed messageEdit, messageSend, channelMessages -> should be ready for iteration3
+- assist Sarah with dmLeave (try to debug any errors encountered)
+
+NOTES: 
+- all functions that have a query or body parameter should be passed as headers i.e. req.body.<param> --> req.header.('parameter')
+- all functions that require a token should return 403 if token is invalid
+- need to complete PLANNING.pdf --> Elicitation, analysis & specification, validation, interface design, conceptual modellling/state diagrams
+
+
+---- ADDITIONAL WORKS ----
+
+data persistence - Richard 
+-> introduced a new function loadData and will return the dataStore from a saved file
+-> modified the saveData 
+-> setData will save the dataStore in the savefile
+-> getData will get the date in the dataStore in the savefile
+
+secure sessions & passwords - Jacky 
+
+---- ITERATION 3 WORK ALLOCATIONS -----
+
+---- SARAH ----
+notifications/get/v1
+search/v1 
+
+---- NIRA ----
+auth/passwordreset/request/v1
+auth/passwordreset/reset/v1 
+user/profile/uploadphoto/v1 
+user/stats/v1 
+users/stats/v1 
+
+----  JACKY ------
+message/share/v1 
+message/react/v1 
+message/unreact/v1 
+message/pin/v1 
+message/unpin/v1 
+
+----  RICHARD ------
+standup/start/v1
+standup/active/v1
+standup/send/v1
+
+---- TO BE DETERMINED ----
+admin/user/remove/v1 
+admin/userpermission/change/v1 
+message/sendlater/v1
+message/sendlaterdm/v1
+
+
+
